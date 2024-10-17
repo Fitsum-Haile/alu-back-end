@@ -23,6 +23,7 @@ if __name__ == "__main__":
     except ValueError:
         print("Employee ID must be an integer.")
         sys.exit(1)
+
     # Base URL for the JSONPlaceholder API
     base_url = "https://jsonplaceholder.typicode.com"
 
@@ -48,7 +49,7 @@ if __name__ == "__main__":
     number_of_done_tasks = len(done_tasks)
 
     # Output results in the specified format
-    print(f"Employee {employee_name} is done with 
-          tasks({number_of_done_tasks}/{total_tasks}):")
+    print(f"Employee {employee_name} is done with "
+          f"tasks({number_of_done_tasks}/{total_tasks}):")
     for task in done_tasks:
         print("\t " + task.get("title"))
