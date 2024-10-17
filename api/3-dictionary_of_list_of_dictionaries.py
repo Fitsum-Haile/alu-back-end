@@ -27,6 +27,7 @@ import requests
 USERS_URL = "https://jsonplaceholder.typicode.com/users"
 TODOS_URL = "https://jsonplaceholder.typicode.com/todos"
 
+
 def export_all_tasks_to_json():
     """
     Fetches tasks for all employees and exports them to todo_all_employees.json
@@ -42,7 +43,6 @@ def export_all_tasks_to_json():
     for user in users:
         user_id = user['id']
         username = user['username']
-        
         # Filter tasks for the current user
         user_tasks = []
         for task in todos:
@@ -52,7 +52,6 @@ def export_all_tasks_to_json():
                     "task": task['title'],
                     "completed": task['completed']
                 })
-        
         # Store the tasks in the all_tasks dictionary
         all_tasks[user_id] = user_tasks
 
