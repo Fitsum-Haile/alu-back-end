@@ -4,7 +4,7 @@ This script fetches and displays the TODO list progress for a given employee
 from a REST API.
 
 The output format is:
-Employee EMPLOYEE_NAME is done with 
+Employee EMPLOYEE_NAME is done with
 tasks(NUMBER_OF_DONE_TASKS/TOTAL_NUMBER_OF_TASKS):
     TASK_TITLE_1
     TASK_TITLE_2
