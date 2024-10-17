@@ -6,7 +6,7 @@ and exports the data into a JSON file.
 The JSON format is:
 {
     "USER_ID": [
-        {"task": "TASK_TITLE", "completed": 
+        {"task": "TASK_TITLE", "completed":
         TASK_COMPLETED_STATUS, "username": "USERNAME"},
         ...
     ]
